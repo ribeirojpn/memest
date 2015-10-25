@@ -7,7 +7,8 @@ var session = require('express-session');
 module.exports = function(){
   var app = express();
   app.set('port',process.env.PORT || 3000);
-  app.set(express.static('./public'));
+  app.use(express.static('./public'));
+  app.set('view engine','ejs');
   app.set('views', './app/views');
 
   app.use(bodyParser.urlencoded({extended:true}));

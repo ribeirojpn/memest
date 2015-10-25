@@ -1,0 +1,16 @@
+.banner {
+  background-image: url('./../images/meme-wallpaper.jpg');
+  background-size: cover;
+}
+
+.banner h1{
+  color: white;
+  font-family: Impact;
+  font-size: 100px;
+  margin-top: 180px;
+}
+
+.banner h4{
+  color:white;
+  margin-bottom:160px;
+}
