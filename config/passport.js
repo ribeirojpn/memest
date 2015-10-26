@@ -17,7 +17,7 @@ module.exports = function() {
       {'name':profile.displayName,
        'photo': profile.photos[0].value},function(erro,user) {
          if(erro){
-           console.log(erro);
+           console.error(erro);
            return done(erro);
          }
          return done(null,user);

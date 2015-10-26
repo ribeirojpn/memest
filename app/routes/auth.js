@@ -2,7 +2,7 @@ var passport = require('passport');
 
 module.exports = function(app){
   app.get('/login',function(req,res){
-    res.render('login',{});
+    res.render('login',{'userLogged':false});
   });
 
   app.get('/auth/twitter',passport.authenticate('twitter',{scope: 'photo'}));
