@@ -9,7 +9,7 @@ angular.module('memest').controller('AddImageController',function($scope,$resour
   $scope.save = function() {
     $scope.image.$save().then(
       function(){
-        $scope.mensagem.success = 'Imagge added!';
+        $scope.mensagem.success = 'Image added!';
         $scope.mensagem.erro = '';
         $scope.image = new Image();
       }

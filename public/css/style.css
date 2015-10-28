@@ -24,6 +24,40 @@ body {
   padding-top:50px;
 }
 
+.card {
+  width:264px;
+  border:1px solid #ccc;
+  padding:1px;
+  margin-bottom: 20px;
+}
+.card .title {
+  font-size: 20px;
+  font-weight: 300;
+}
+.card-text {
+  padding:10px;
+}
+/* SUBSTITUIONS */
+/*.grid-item { width: 200px; }
+.grid-item img{ width: 200px; }
+.grid-item--width2 { width: 400px; }
+.grid-item--width2 img{ width: 400px; }*/
+.deckgrid[deckgrid]::before {
+    /* Specifies that the grid should have a maximum of 4 columns. Each column will have the classes 'column' and 'column-1-4' */
+    content: '4 .column.column-1-4';
+    font-size: 0; /* See https://github.com/akoenig/angular-deckgrid/issues/14#issuecomment-35728861 */
+    visibility: hidden;
+}
+
+.deckgrid .column {
+    float: left;
+}
+
+.deckgrid .column-1-4 {
+    width: 25%;
+}
+
+
 /* Auth buttons */
 
 .btn-social-box {

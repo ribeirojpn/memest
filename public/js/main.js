@@ -1,4 +1,4 @@
-angular.module('memest',['ngRoute','ngResource']).config(function($routeProvider){
+angular.module('memest',['ngRoute','ngResource','akoenig.deckgrid']).config(function($routeProvider){
   $routeProvider.when('/',{
     templateUrl: 'partials/home.html',
     controller: 'HomeController'
