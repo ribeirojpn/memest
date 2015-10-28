@@ -4,5 +4,10 @@ angular.module('memest',['ngRoute','ngResource']).config(function($routeProvider
     controller: 'HomeController'
   });
 
+  $routeProvider.when('/add-image',{
+    templateUrl: 'partials/add-image.html',
+    controller: 'AddImageController'
+  });
+
   $routeProvider.otherwise({redirectTo:'/'});
 });

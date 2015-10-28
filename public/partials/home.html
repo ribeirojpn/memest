@@ -1,8 +1,12 @@
 <div class="content">
   <div class="container">
     <h1>MEMEST!</h1>
-    <p>
-      {{message.text}}
-    </p>
+    <ul>
+      <li ng-repeat="image in images">
+        <h3>{{image.title}}<h3>
+        <img ng-src="{{image.image_url}}" alt="" />
+      </li>
+    </ul>
+
   </div>
 </div>
