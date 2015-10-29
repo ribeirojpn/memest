@@ -3,4 +3,7 @@ module.exports = function(app){
 
   app.route('/api/user/:login')
     .get(controller.getUser);
+  app.route('/api/user/:login/images')
+    .get(controller.getUserImages);
+
 };

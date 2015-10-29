@@ -3,7 +3,6 @@ angular.module('memest').controller('HomeController',function ($scope,$resource)
 
   Images.query(function (images) {
     $scope.images = images;
-    console.log(images);
 
   },function (erro) {
     console.log(erro);
