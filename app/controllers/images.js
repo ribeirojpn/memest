@@ -3,7 +3,7 @@ module.exports = function(app){
   var controller = {};
 
   controller.getImages = function(req,res){
-    Image.find().sort({date: 'descending'}).exec().then(function(images){
+    Image.find().populate('author').sort({date: 'descending'}).exec().then(function(images){
       res.json(images);
     },function(erro){
       res.status(500).json(erro);
@@ -24,7 +24,7 @@ module.exports = function(app){
   controller.getImage = function(req,res){
     var id = req.params.id;
 
-    Image.findById(id).populate('author','pins').exec(function(image){
+    Image.findById(id).populate('author').exec(function(image){
       res.json(image);
     },function(erro){
       res.status(404).json('Not found.');

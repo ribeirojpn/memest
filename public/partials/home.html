@@ -8,12 +8,13 @@
       </div>
     </div> -->
     <div deckgrid class="deckgrid" source="images">
-      <div class="a-card">
+      <div class="a-card column size-1-4">
         <div class="card">
-          <img src="" data-ng-src="{{card.image_url}}" style="width:260px;">
+          <img src="" data-ng-src="{{card.image_url}}" width="100%">
           <div class="cart-text" style="padding:10px">
             <p class="title">{{card.title}}</p>
-            <p>{{card.description}}</p>
+            <p class="description">{{card.description}}</p>
+            <p class="">{{card.author.name}}</p>
           </div>
         </div>
       </div>
