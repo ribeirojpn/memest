@@ -24,7 +24,7 @@ module.exports = function(app){
   controller.getImage = function(req,res){
     var id = req.params.id;
 
-    Image.findById(id).populate('author').exec(function(image){
+    Image.findById(id).populate('author').exec().then(function(image){
       res.json(image);
     },function(erro){
       res.status(404).json('Not found.');

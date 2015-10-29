@@ -9,5 +9,10 @@ angular.module('memest',['ngRoute','ngResource','akoenig.deckgrid']).config(func
     controller: 'AddImageController'
   });
 
+  $routeProvider.when('/:login',{
+    templateUrl: 'partials/profile.html',
+    controller: 'ProfileController'
+  });
+
   $routeProvider.otherwise({redirectTo:'/'});
 });

@@ -1,4 +1,4 @@
-angular.module('memest').controller('HomeController',function ($scope,$resource,$routeParams){
+angular.module('memest').controller('HomeController',function ($scope,$resource){
   var Images = $resource('/api/images');
 
   Images.query(function (images) {

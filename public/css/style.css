@@ -65,7 +65,7 @@ body {
 }
 
 .deckgrid .column .size-1-2 {
-    width:250px;
+    width:280px;
 }
 
 .deckgrid .column .size-1-1 {
@@ -75,13 +75,13 @@ body {
     width: 25%;
 }
 .deckgrid .column-1-3 {
-    width: 33%;
+    width: 30%;
 }
 .deckgrid .column-1-2 {
     width: 50%;
 }
 .deckgrid .column-1-1 {
-    width: 100%;
+    width: 72%;
 }
 
 @media screen and (max-width: 1280px){
@@ -89,13 +89,13 @@ body {
         content: '3 .column.column-1-3';
     }
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 992px){
     .deckgrid[deckgrid]::before {
         content: '2 .column.column-1-2';
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 580px){
     .deckgrid[deckgrid]::before {
         content: '1 .column.column-1-1';
     }
