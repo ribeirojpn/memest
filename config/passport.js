@@ -10,7 +10,8 @@ module.exports = function() {
   passport.use(new TwitterStrategy({
     consumerKey: 'VM9vQ9iD7ky6kp9VzqfBSloT2',
     consumerSecret: 'IlZdZ7HvNbbLxIkRERwqZwBqzsgJpXAxI7VhX3tqz9IeCeHrPQ',
-    callbackURL: 'http://127.0.0.1:3000/auth/twitter/callback'
+    // callbackURL: 'http://127.0.0.1:3000/auth/twitter/callback'
+    callbackURL: 'https://memest.herokuapp.com/auth/twitter/callback'
   }, function(token, tokenSecret, profile, done) {
     User.findOrCreate(
       {'login':profile.username},
