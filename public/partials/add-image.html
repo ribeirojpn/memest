@@ -9,7 +9,7 @@
     <form class="add-book" ng-submit="save()">
       <div class="form-group">
         <label for="bookUrlImage">Image URL:</label>
-        <input type="text" class="form-control" name="url_image" ng-model="image.image_url" id="ImageUrl" placeholder="URL Image">
+        <input type="text" class="form-control" name="url_image" ng-model="image.image_url" id="ImageUrl" placeholder="URL Image" required="">
         <p class="help-block">Ex: http://imagens.elivrosgratis.com/capas/Harry-Potter--E-A-Pedra-Filosofal.jpg</p>
       </div>
       <div class="form-group">
@@ -23,7 +23,7 @@
 
       <br>
       <div class="form-buttons text-right">
-        <a href="/#/mybooks" class="btn btn-link">Cancel</a>
+        <a href="/#/" class="btn btn-link">Cancel</a>
         <button type="submit" class="btn btn-success">Submit</button>
       </div>
     </form>

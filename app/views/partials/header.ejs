@@ -18,10 +18,10 @@
       <ul class="nav navbar-nav navbar-right">
         <% if (userLogged) {%>
           <li><a href="/#/add-image"><i class="fa fa-plus"></i> New Image</a></li>
-          <li><a><%= userName %></a></li>
+          <li><a href="/#/my-profile"><%= userName %></a></li>
           <li><a href="/#/config"><i class="fa fa-cog"></i></a></li>
           <li>
-            <a href="/logout"><i class="fa fa-sign-out"></i></a>
+            <a href="/logout"><i class="fa fa-sign-out"></i> Logout</a>
           </li>
         <%} else {%>
           <li><a href="/login">Login</a></li>

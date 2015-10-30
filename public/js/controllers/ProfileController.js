@@ -8,7 +8,7 @@ angular.module('memest').controller('ProfileController',function($scope,$resourc
     getImages(user.login);
   },function (erro) {
     console.log(erro);
-  })
+  });
 
  function getImages(login) {
    Images.query({'login': login},function (images) {
