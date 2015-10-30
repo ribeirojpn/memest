@@ -10,11 +10,12 @@ angular.module('memest').controller('ProfileController',function($scope,$resourc
     console.log(erro);
   });
 
- function getImages(login) {
-   Images.query({'login': login},function (images) {
-     $scope.images = images;
-   },function (erro) {
-     console.log(erro);
-   });
+  function getImages(login) {
+    Images.query({'login': login},function (images) {
+      $scope.images = images;
+    },function (erro) {
+      console.log(erro);
+    }
+  );
  }
 });

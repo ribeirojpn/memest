@@ -1,4 +1,4 @@
-<header class="navbar navbar-default navbar-fixed-top">
+<header class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <% if (userLogged) {%>
@@ -19,7 +19,7 @@
         <% if (userLogged) {%>
           <li><a href="/#/add-image"><i class="fa fa-plus"></i> New Image</a></li>
           <li><a href="/#/my-profile"><%= userName %></a></li>
-          <li><a href="/#/config"><i class="fa fa-cog"></i></a></li>
+          <!-- <li><a href="/#/config"><i class="fa fa-cog"></i></a></li> -->
           <li>
             <a href="/logout"><i class="fa fa-sign-out"></i> Logout</a>
           </li>

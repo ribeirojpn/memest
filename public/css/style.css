@@ -19,6 +19,18 @@ body {
   margin-bottom:160px;
 }
 
+.promo {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #f4f4f4
+}
+.promo h1{
+  margin-bottom: 40px;
+}
+footer {
+  padding: 20px;
+}
+
 .login, .content{
   margin-top: 50px;
 }
@@ -128,7 +140,7 @@ body {
 }
 .btn-social {
   margin: auto;
-  width: 250px;
+  width: 220px;
   text-align: left;
   font-size: 16px;
   color: white;

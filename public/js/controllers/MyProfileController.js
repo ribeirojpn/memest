@@ -10,24 +10,23 @@ angular.module('memest').controller('MyProfileController',function($scope,$resou
     console.log(erro);
   });
 
- function getImages(login) {
-   Images.query({},function (images) {
-     $scope.images = images;
-     console.log(images);
-   },function (erro) {
-     console.log(erro);
-   });
- }
+  function getImages() {
+    Images.query({},function (images) {
+      $scope.images = images;
+      console.log(images);
+    },function (erro) {
+      console.log(erro);
+    });
+  }
 
- $scope.removeImage = function(id){
-   Image.remove({id:id},
+  $scope.removeImage = function(id){
+    Image.remove({id:id},
      function(){
        $scope.mensagem.delete = 'Image removed.';
      },function (erro) {
        $scope.mensagem.erro = 'Erro, try again.';
        console.log(erro);
-     }
-   );
-   getImages($scope.user.login);
- }
+     });
+    getImages($scope.user.login);
+  };
 });
