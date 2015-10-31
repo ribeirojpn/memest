@@ -13,7 +13,6 @@ angular.module('memest').controller('MyProfileController',function($scope,$resou
   function getImages() {
     Images.query({},function (images) {
       $scope.images = images;
-      console.log(images);
     },function (erro) {
       console.log(erro);
     });
